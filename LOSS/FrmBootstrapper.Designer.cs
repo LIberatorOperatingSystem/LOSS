@@ -1,6 +1,6 @@
 ﻿namespace LOSS
 {
-    partial class Form1
+    partial class FrmBootstrapper
     {
         /// <summary>
         /// Required designer variable.

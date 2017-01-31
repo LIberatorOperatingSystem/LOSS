@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmBootstrapper.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmBootstrapper.Designer.cs">
+      <DependentUpon>FrmBootstrapper.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmBootstrapper.resx">
+      <DependentUpon>FrmBootstrapper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,6 +89,10 @@
     <ProjectReference Include="..\GUIControls\GUIControls.csproj">
       <Project>{22ECF459-7E48-4F6A-B1DF-6187D7712175}</Project>
       <Name>GUIControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUIDialogs\GUIDialogs.csproj">
+      <Project>{d533c751-8afb-474c-8190-86a8198c9a1d}</Project>
+      <Name>GUIDialogs</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
