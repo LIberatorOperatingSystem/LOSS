@@ -12,9 +12,25 @@ namespace GUIDialogs
 {
     public partial class FrmExitDialog : Form
     {
+
+        public delegate void LoginRequestedDelegate();
+        public event LoginRequestedDelegate LoginRequestedEvent;
+        public delegate void ExitRequestedDelegate();
+        public event ExitRequestedDelegate ExitRequestedEvent;
+
         public FrmExitDialog()
         {
             InitializeComponent();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            LoginRequestedEvent?.Invoke();
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            ExitRequestedEvent?.Invoke();            
         }
     }
 }
